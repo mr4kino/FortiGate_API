@@ -44,7 +44,7 @@ print '\n'
 #we try to post, ie create, a firewall address
 addresstest = {'name':"address13", 'type': "ipmask", 'subnet': "1.1.1.0 255.255.255.0"}
 api_cmdb = 'api/v2/cmdb/'
-c = client.post(url + api_cmdb + 'firewall/address?vdom=root', verify = False)
+c = client.post(url + api_cmdb + 'firewall/address?vdom=root', params= addresstest, verify = False)
 print '\n'
 #print c.text
 
