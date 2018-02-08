@@ -23,7 +23,7 @@ for fqdn in List_FQDN:
 	except (dns.resolver.NoAnswer):
 		print("Couldn't find any records (NoAnswer)")
 	except (dns.resolver.NoNameservers):
-		print(": All nameservers failed to answer the query" + a + "IN A: Server 141.163.177.1 UDP port 53 answered REFUSED")
+		print(": All nameservers failed to answer the query" + a + "IN A: Server 8.8.8.8 UDP port 53 answered REFUSED")
 	print("\n\n")
 	
 List_FQDN.close()
